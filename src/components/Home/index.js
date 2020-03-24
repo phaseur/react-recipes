@@ -6,18 +6,18 @@ import Card from './card';
 import './home.scss';
 
 // == Composant
-const Home = ({ data }) => (
+const Home = ({ datas }) => (
   <main className="home">
     <h1 className="subtitle">Bienvenue sur mon site de cuisine. Régalez-vous</h1>
     <div className="card-list">
-      {data.map((recipe) => (
+      {datas.map((recipe) => (
         <Card key={recipe.id} {...recipe} />
       ))}
     </div>
   </main>
 );
 Home.propTypes = {
-  data: PropTypes.arrayOf(PropTypes.shape({
+  datas: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.number.isRequired,
   }).isRequired).isRequired,
 };

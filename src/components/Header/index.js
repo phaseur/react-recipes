@@ -7,11 +7,11 @@ import slugify from 'slugify';
 import './header.scss';
 
 // == Composant
-const Header = ({ items }) => (
+const Header = ({ datas }) => (
   <header className="header">
     <nav className="nav-list">
       <li className="nav-item"><NavLink to="/">Accueil</NavLink></li>
-      {items.map((recipe) => (
+      {datas.map((recipe) => (
         <NavLink
           key={recipe.id}
           className="nav-item"
@@ -26,7 +26,7 @@ const Header = ({ items }) => (
 );
 
 Header.propTypes = {
-  items: PropTypes.arrayOf(PropTypes.shape({
+  datas: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.number.isRequired,
     title: PropTypes.string.isRequired,
   }).isRequired).isRequired,
