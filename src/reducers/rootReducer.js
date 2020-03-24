@@ -1,5 +1,7 @@
+import data from 'src/data';
+
 const initialState = {
-  recipes: [],
+  recipes: data,
   test: false,
 };
 
