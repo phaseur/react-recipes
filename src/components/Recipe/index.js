@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import HeaderRecipe from 'src/components/HeaderRecipe';
 import Ingredients from 'src/components/Ingredients';
+import Steps from 'src/components/Steps';
 import './recipe.scss';
 
 // Ingredients sert de passe-plat pour fournir l'ingrédient à Ingredient
@@ -12,6 +13,7 @@ const Recipe = ({ item }) => (
   <>
     <HeaderRecipe {...item} />
     <Ingredients {...item} />
+    <Steps {...item} />
   </>
 );
 

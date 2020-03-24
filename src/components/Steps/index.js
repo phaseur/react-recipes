@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 import './steps.scss';
 
-const Steps = ({ steps }) => (
+const Steps = ({ instructions }) => (
   <ul className="steps">
-    {steps.map((step) => (
+    {instructions.map((step) => (
       <li key={step} className="step">
         {step}
       </li>
@@ -15,7 +15,7 @@ const Steps = ({ steps }) => (
 
 Steps.propTypes = {
   // tableau de chaîne de caractères
-  steps: PropTypes.arrayOf(PropTypes.string).isRequired,
+  instructions: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default Steps;
