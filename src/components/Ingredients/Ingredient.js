@@ -8,7 +8,10 @@ const Ingredient = ({ quantity, unit, name }) => (
 );
 
 Ingredient.propTypes = {
-  quantity: PropTypes.number.isRequired,
+  quantity: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number,
+  ]).isRequired,
   unit: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
 };
