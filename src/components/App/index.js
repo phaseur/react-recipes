@@ -2,8 +2,6 @@
 import React from 'react';
 // == Import
 import Header from 'src/components/Header';
-import Ingredients from 'src/components/Ingredients';
-import Steps from 'src/components/Steps';
 import Home from 'src/components/Home';
 import Recipe from 'src/components/Recipe';
 import data from 'src/data';
