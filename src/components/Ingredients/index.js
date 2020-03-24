@@ -13,24 +13,16 @@ const Ingredients = ({ ingredients }) => (
     {ingredients.map((ingredient) => (
       <Ingredient
         key={ingredient.id}
-        {...ingredient.ingredients}
+        {...ingredient}
       />
     ))}
   </ul>
 );
 
 Ingredients.propTypes = {
-  // tableau d'objets
-  // ingredients: PropTypes.arrayOf(PropTypes.object).isRequired,
-  // c'est mieux de préciser la forme de l'objet
-  ingredients: PropTypes.arrayOf(
-    // a la forme d'un objet
-    PropTypes.shape({
-      // avec telles propriétés
-      // on indique seulement les propriétés qu'on utilise dans le composant Ingredients
-      id: PropTypes.number.isRequired,
-    }).isRequired,
-  ).isRequired,
+  ingredients: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.number.isRequired,
+  }).isRequired).isRequired,
 };
 
 export default Ingredients;
