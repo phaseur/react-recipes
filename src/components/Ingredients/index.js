@@ -13,7 +13,7 @@ const Ingredients = ({ ingredients }) => (
     {ingredients.map((ingredient) => (
       <Ingredient
         key={ingredient.id}
-        {...ingredient}
+        {...ingredient.ingredients}
       />
     ))}
   </ul>

@@ -13,9 +13,9 @@ const App = () => (
   <div className="app">
     <Header />
     <div className="main-site">
-      <h1 className="title">oRecipes</h1>
-      <Home />
-      {/* <Ingredients />
+      <h1 className="title">iCook</h1>
+      <Home data={data} />
+      {/* <Ingredients ingredients={data} />
       <Steps /> */}
     </div>
   </div>
