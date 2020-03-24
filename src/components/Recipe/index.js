@@ -8,17 +8,17 @@ import './recipe.scss';
 // ... => spread operator, on déverse tout ce qui est dans ingredient
 // {...ingredient} => je fournis name, quantity, unit, id
 // {ingredient} => je fournis un objet
-const Recipe = ({ data }) => (
+const Recipe = ({ item }) => (
   <>
-    <HeaderRecipe {...data[0]} />
-    <Ingredients {...data[0]} />
+    <HeaderRecipe {...item} />
+    <Ingredients {...item} />
   </>
 );
 
 Recipe.propTypes = {
-  data: PropTypes.arrayOf(PropTypes.shape({
+  item: PropTypes.shape({
     id: PropTypes.number.isRequired,
-  }).isRequired).isRequired,
+  }).isRequired,
 };
 
 export default Recipe;
