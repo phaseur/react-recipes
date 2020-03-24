@@ -16,7 +16,7 @@ const Card = ({
     </header>
     <main className="card-info">
       <p className="card-title">{title}</p>
-      <p className="card-difficulty">{difficulty}</p>
+      <p className="card-difficulty">Difficulté : {difficulty}</p>
       <a className="card-link">Voir la recette</a>
     </main>
   </article>
