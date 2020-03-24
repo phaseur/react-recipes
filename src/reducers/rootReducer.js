@@ -2,7 +2,6 @@ import data from 'src/data';
 
 const initialState = {
   recipes: data,
-  test: false,
 };
 
 function rootReducer(state = initialState, action) {
