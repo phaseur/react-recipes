@@ -1,5 +1,9 @@
 // == Import npm
 import React from 'react';
+import {
+  Switch,
+  Route,
+} from 'react-router-dom';
 // == Import
 import Header from 'src/components/Header';
 import Home from 'src/components/Home';
@@ -14,8 +18,14 @@ const App = () => {
       <Header />
       <div className="main-site">
         <h1 className="title">iCook</h1>
-        {/* <Home data={data} /> */}
-        <Recipe data={data} />
+        <Switch>
+          <Route exact path="/">
+            <Home data={data} />
+          </Route>
+          <Route exact path="/recettes/crepes">
+            <Recipe data={data} />
+          </Route>
+        </Switch>
       </div>
     </div>
   );
