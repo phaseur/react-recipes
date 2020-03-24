@@ -13,7 +13,7 @@ const Card = ({
   difficulty,
 }) => {
   let link = slugify(`${title}`, { lower: true });
-  link = `recipes/${link}`;
+  link = `/recipes/${link}`;
   return (
     <article className="card">
       <header>

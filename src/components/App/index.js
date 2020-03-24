@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-max-props-per-line */
 // == Import npm
 import React from 'react';
 import {
