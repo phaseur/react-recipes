@@ -15,7 +15,7 @@ const Header = ({ items }) => (
         <NavLink
           key={recipe.id}
           className="nav-item"
-          to={`recipes/${slugify(recipe.title,
+          to={`/recipes/${slugify(recipe.title,
             { lower: true })}`}
         >
           {recipe.title}

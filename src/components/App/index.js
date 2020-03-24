@@ -26,11 +26,15 @@ const App = () => {
           </Route>
           {data.map((item) => (
             <Route
+              key={item.title}
               exact path={`/recipes/${slugify(item.title, { lower: true })}`}
             >
               <Recipe key={item.id} item={item} />
             </Route>
           ))}
+          <Route>
+            <div>404 bro</div>
+          </Route>
         </Switch>
       </div>
     </div>
