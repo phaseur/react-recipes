@@ -8,7 +8,7 @@ import './home.scss';
 // == Composant
 const Home = ({ datas }) => (
   <main className="home">
-    <h1 className="subtitle">Bienvenue sur mon site de cuisine. Régalez-vous</h1>
+    <h2 className="subtitle">Bienvenue sur mon site de cuisine. Régalez-vous</h2>
     <div className="card-list">
       {datas.map((recipe) => (
         <Card key={recipe.id} {...recipe} />

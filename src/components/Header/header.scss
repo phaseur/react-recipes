@@ -17,5 +17,8 @@
         cursor: pointer;
       }
     }
+    .nav-item-active{
+      color: $mainColor;
+    }
   }
 }

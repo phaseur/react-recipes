@@ -1,13 +1,9 @@
-import data from 'src/data';
+import { combineReducers } from 'redux';
 
-const initialState = {
-  recipes: data,
-};
+import recipesReducer from './recipesReducer';
 
-function rootReducer(state = initialState, action) {
-  switch (action.type) {
-    default:
-      return state;
-  }
-}
+const rootReducer = combineReducers({
+  recipes: recipesReducer,
+});
+
 export default rootReducer;

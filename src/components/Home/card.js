@@ -1,7 +1,7 @@
 // == Import npm
 import React from 'react';
 import PropTypes from 'prop-types';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import slugify from 'slugify';
 // == Import
 import './home.scss';
@@ -20,9 +20,9 @@ const Card = ({
         <img className="card-image" alt="img" src={thumbnail} />
       </header>
       <main className="card-info">
-        <p className="card-title">{title}</p>
+        <h3 className="card-title">{title}</h3>
         <p className="card-difficulty">Difficulté : {difficulty}</p>
-        <NavLink className="card-link" to={link}>Voir la recette</NavLink>
+        <Link className="card-link" to={link}>Voir la recette</Link>
       </main>
     </article>
   );
