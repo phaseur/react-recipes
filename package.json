@@ -45,9 +45,16 @@
     "webpack-merge": "*"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "bundle-stats-webpack-plugin": "^2.0.1",
     "prop-types": "*",
     "react": "*",
-    "react-dom": "*"
+    "react-dom": "*",
+    "react-redux": "^7.2.0",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "slugify": "^1.4.0"
   }
 }

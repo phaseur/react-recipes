@@ -1,0 +1,44 @@
+@import 'src/styles/_vars.scss';
+.home{
+  padding: 1em;
+  background-color: #fff;
+}
+.subtitle{
+  font-size: 2em;
+}
+.card{
+  width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 2%;
+  margin-bottom: 1em;
+}
+.card-image{
+  max-width: 100%;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+}
+.card-list{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.5em;
+  justify-content: space-evenly;
+}
+.card-info{
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  justify-content: space-between;
+}
+.card-title{
+ font-weight: bold;
+ font-size: 2em;
+ margin-bottom: 0.5em;
+}
+.card-difficulty{
+  margin-bottom: 0.5em;
+}
+.card-link{
+  margin-bottom: 0.5em;
+  color: $mainColor;
+  cursor: pointer;
+}

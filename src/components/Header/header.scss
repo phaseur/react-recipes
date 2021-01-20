@@ -1,0 +1,24 @@
+@import 'src/styles/_vars.scss';
+.header{
+  height: 100%;
+  width: 25%;
+  position: fixed;
+  padding: 2em;
+  background-color: rgb(246, 240, 240);
+  .nav-list{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+    .nav-item{
+      list-style: none;
+      margin-bottom: 0.5em;
+      &:hover{
+        color: $mainColor;
+        cursor: pointer;
+      }
+    }
+    .nav-item-active{
+      color: $mainColor;
+    }
+  }
+}
